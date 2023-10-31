@@ -66,7 +66,7 @@ class AdminProfile(models.Model):
 
 
 class courses(models.Model):
-    user_id = models.ForeignKey(User,on_delete=models.CASCADE)
+    # user_id = models.ForeignKey(User,on_delete=models.CASCADE)
     course_name = models.CharField(max_length=55)
     course_desc = models.TextField()
     course_price = models.IntegerField(max_length=10)
