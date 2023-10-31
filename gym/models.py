@@ -63,3 +63,11 @@ class UserProfile(models.Model):
 class AdminProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     profile_picture = models.ImageField(upload_to='admin_profiles/', null=True, blank=True)
+
+
+class courses(models.Model):
+    user_id = models.ForeignKey(User,on_delete=models.CASCADE)
+    course_name = models.CharField(max_length=55)
+    course_desc = models.TextField()
+    course_price = models.IntegerField(max_length=10)
+    course_img = models.ImageField(upload_to='admin_profiles/', null=True, blank=True)

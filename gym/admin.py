@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Trainer, Equipment, Category, PackageType, Package, Booking, Inquiry, UserProfile, AdminProfile
+from .models import Trainer, Equipment, Category, PackageType, Package, Booking, Inquiry, UserProfile, AdminProfile, courses
 
 # Register the models with the admin site
 admin.site.register(Trainer)
@@ -11,3 +11,4 @@ admin.site.register(Booking)
 admin.site.register(Inquiry)
 admin.site.register(UserProfile)
 admin.site.register(AdminProfile)
+admin.site.register(courses)
