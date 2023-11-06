@@ -46,9 +46,10 @@ class Booking(models.Model):
 
 
 class Inquiry(models.Model):
-    guest_user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
-    admin = models.ForeignKey(User, on_delete=models.CASCADE)
+    guest_user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='guest_inquiries')
+    admin = models.ForeignKey(User, on_delete=models.CASCADE, related_name='admin_inquiries')
     inquiry_message = models.TextField()
+
 
 
 # Custom User Profile for Registered Users
@@ -69,5 +70,5 @@ class courses(models.Model):
     # user_id = models.ForeignKey(User,on_delete=models.CASCADE)
     course_name = models.CharField(max_length=55)
     course_desc = models.TextField()
-    course_price = models.IntegerField(max_length=10)
+    course_price = models.IntegerField()
     course_img = models.ImageField(upload_to='admin_profiles/', null=True, blank=True)

@@ -1,3 +1,4 @@
+{% load static %}
 <section class="section bg-light element-animate">
 
       <div class="clearfix mb-5 pb-5">
@@ -16,7 +17,7 @@
         <div class="row no-gutters">
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/img_1_square.jpg');"></div>
+              <div class="bg-image order-2" style="background-image: url('{% static 'img/img_1_square.jpg' %}');"></div>
               <div class="text order-1">
                 <h3>Fitness Class Name Here</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
@@ -31,7 +32,7 @@
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/img_2_square.jpg');"></div>
+              <div class="bg-image" style="background-image: url('{% static 'img/img_2_square.jpg' %}');"></div>
               <div class="text">
                 <h3>Fitness Class Name Here</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
@@ -49,7 +50,7 @@
 
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/img_4_square.jpg');"></div>
+              <div class="bg-image order-2" style="background-image: url('{% static 'img/img_4_square.jpg' %}');"></div>
               <div class="text order-1">
                 <h3>Fitness Class Name Here</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
@@ -64,7 +65,7 @@
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/img_3_square.jpg');"></div>
+              <div class="bg-image" style="background-image: url('{% static 'img/img_3_square.jpg' %}');"></div>
               <div class="text">
                 <h3>Fitness Class Name Here</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
@@ -82,5 +83,4 @@
         </div>
 
 
-      </div>
-    </section>
+</section>
